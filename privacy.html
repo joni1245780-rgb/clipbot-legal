@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClipBot – Privacy Policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>ClipBot – Privacy Policy</h1>
+<p class="meta">Last updated: 18 November 2026</p>
+
+<h2>1. Who we are</h2>
+<p>ClipBot is a private, self-hosted tool operated by Jonas
+(the "Operator"). It runs on the Operator's own computer. It turns short clips from Twitch
+channels whose owners have given permission into vertical videos and publishes them to the
+Operator's own YouTube and TikTok accounts.</p>
+<p>ClipBot is not offered to the public. The only person who signs in to ClipBot with TikTok
+is the Operator.</p>
+<p>Contact: joni1245780@gmail.com</p>
+
+<h2>2. What data ClipBot processes</h2>
+<h3>2.1 Data from TikTok (TikTok Login Kit and Content Posting API)</h3>
+<p>When the Operator connects their TikTok account, ClipBot receives and stores:</p>
+<ul>
+  <li>an access token and a refresh token,</li>
+  <li>the TikTok account identifier (open_id),</li>
+  <li>the list of granted permissions (scopes), and</li>
+  <li>before each post, the creator information TikTok returns for the connected account
+      (for example the allowed privacy levels and the maximum video length).</li>
+</ul>
+<p>ClipBot uses this data only to upload and publish videos to the Operator's own TikTok
+account and to show the posting options TikTok allows for that account. ClipBot does not
+read, collect or store data about other TikTok users, followers, comments, messages or
+viewing behaviour.</p>
+
+<h3>2.2 Video content</h3>
+<p>ClipBot processes video clips from Twitch channels listed in its configuration. Clips
+include the image and voice of the respective streamers. ClipBot only processes channels
+whose owners have given permission. Each published video names the original streamer.
+To create subtitles, the audio is transcribed locally on the Operator's computer; no audio
+is sent to a transcription service.</p>
+
+<h3>2.3 Other services</h3>
+<ul>
+  <li><strong>Twitch API</strong>: to find clips of the configured channels (public clip data such as title, view count and duration).</li>
+  <li><strong>YouTube Data API (Google)</strong>: to upload the same videos to the Operator's YouTube channel.</li>
+  <li><strong>Telegram Bot API</strong>: to send each finished video to the Operator for approval before it is published.</li>
+  <li><strong>Anthropic API</strong> (optional): may receive a clip's title, streamer name, game and duration to suggest a video title and description. No video or audio is sent.</li>
+</ul>
+
+<h2>3. Where data is stored and for how long</h2>
+<ul>
+  <li>TikTok tokens are stored in a local file on the Operator's computer. They are not sent
+      anywhere except to TikTok. The refresh token expires after 180 days or when access
+      is revoked.</li>
+  <li>Processed video files are stored locally and deleted automatically after 14 days.</li>
+  <li>A local database keeps technical records (clip ID, processing status, IDs of the
+      published posts) to avoid publishing the same clip twice.</li>
+</ul>
+<p>ClipBot does not sell, rent or share personal data with anyone except the services
+listed above, and only for the purposes described.</p>
+
+<h2>4. Revoking access</h2>
+<p>Access can be revoked at any time in the TikTok app under Settings and privacy &gt;
+Security &gt; Apps and services (wording may vary), or by contacting the Operator. After
+revocation, ClipBot can no longer post and the stored tokens become invalid; the Operator
+deletes them on request.</p>
+
+<h2>5. Your rights</h2>
+<p>If you are a streamer whose clips appear in a video, or anyone else whose data may be
+affected, you can request information, correction or deletion and withdraw your permission
+at any time by contacting {{EMAIL}}. Published videos are removed on request. If you are
+in the EU, you also have the right to lodge a complaint with a data protection supervisory
+authority.</p>
+
+<h2>6. This website</h2>
+<p>This page is hosted on GitHub Pages. ClipBot itself sets no cookies and uses no analytics
+here. GitHub may log technical data such as IP addresses when you visit the page; see
+GitHub's privacy statement.</p>
+
+<h2>7. Changes</h2>
+<p>This policy may be updated. The date at the top shows the latest version.</p>
+</main>
+</body>
+</html>
